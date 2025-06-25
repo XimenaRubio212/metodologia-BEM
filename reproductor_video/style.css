@@ -1,0 +1,43 @@
+/*bloque principal contenedor del reproductor de video*/
+.reproductor_video{
+    width: 90%; /*ocupa el 90% del ancho del contenedor padre*/
+    max-width: 500px; /*ancho maximo para pantallas grandes*/
+    margin: 20px auto; /*centra horizontalmente con margeb vertical*/
+    padding: 10px; /*espaciado interno*/
+    background-color: #fdfdfd; /*fondo blanco muy claro*/
+    border: 1px solid #ccc; /*borde gris claro*/
+    font-family: Arial, Helvetica, sans-serif; /*fuente sans-serif*/
+}
+
+/*titulo del reproductor*/
+.reproductor_video__title{
+    font-size: 20px; /*tamaño de fuente grande*/
+    text-align: center; /*centa el texto*/
+    margin-bottom: 10px; /*espaciado debajo del titulo*/
+    color: #333; /*color gris oscuro*/
+}
+
+/*contenedor del video*/
+.reproductor_video__marco{
+    text-align: center; /*centra el video*/
+}
+
+/*video*/
+.reproductor_video__video{
+    width: 100%; /*ancho completo*/
+    max-width: 100%; /*no excede del contenedor*/
+    height: auto; /*altura proporcional*/
+    border: 1px solid #aaa; /*borde gris*/
+}
+
+/*descripcion*/
+.reproductor_video__descripcion{
+    margin-top: 10px; /*espaciado arriba para separar del video*/
+}
+
+/*texto de la descripcion*/
+.reproductor_video__texto{
+    font-size: 14px; /*tamaño legible*/
+    color: #444; /*gris medio*/
+    text-align: justify; /*justifica el texto para mejor lectura*/
+}

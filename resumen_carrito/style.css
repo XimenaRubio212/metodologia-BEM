@@ -1,0 +1,113 @@
+/*bloque principal contenedor del resumemn del carrito*/
+/*define un ancho fijo y centra el contenedor,
+con padding para espacio interno,
+borde gris claro y fondo blanco, y una fuente serif elegante*/
+.resumen_carrito{
+    width: 280px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #bbb;
+    background-color: #fdfdfd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*titulo*/
+/*tanaño de fuente legible,
+margen ingerior para separar del contenido,
+texto centrado y coolor gris oscuro*/
+.resumen_carrito__title{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+/*lista de productos*/
+/*sin viñetas ni margenes mi padding,
+margen inferior para separar del total*/
+.resumen_carrito__lista{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+/*item del carrito*/
+/*padding vertical para separar items, 
+borde inferior muy claro para division,
+tamaño de fuente legible*/
+.resumen_carrito__item{
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/*nombre del producto*/
+/*se muestra en linea con ancho del 60%,
+color gris medio para tetxo*/
+.resumen_carrito__nombre{
+    display: inline-block;
+    width: 60%;
+    color: #444;
+}
+
+/*precio del producto*/
+/*se muestra en linea con ancho del 38%,
+alineado a la derecha,
+colo negro para destacar*/
+.resumen_carrito__precio{
+    display: inline-block;
+    width: 38%;
+    text-align: right;
+    color: #000;
+}
+
+/*total*/
+/*borde superior para separar,
+padding y margen para espacio,
+texto en negrita y tamaño un poco mayor,
+alineacion a la derecha*/
+.resumen_carrito__total{
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: right;
+}
+
+/*etiqueta total*/
+/*flotada a la izquierda para separar del monto,
+color gris oscuro*/
+.resumen_carrito__label{
+    float: left;
+    color: #222;
+}
+
+/*detalle total*/
+/*color rojo para llamar la atencion*/
+.resumen_carrito__detalle{
+    color: #e90000;
+}
+
+/*boton de pago*/
+/*ocupa todo el ancho,
+margen superior para separacion,
+padding para comodidad,
+fondo verde, texto blanco,
+sin borde y tamaño legible*/
+.resumen_carrito__boton{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+
+/*efecto hover para el boton*/
+/*fondo verde oscuro al pasar el mouse para mejor interaccion*/
+.resumen_carrito__boton:hover{
+    background-color: #218838;
+}

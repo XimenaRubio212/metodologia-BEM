@@ -1,0 +1,48 @@
+/*bloque principal contenedor del selector*/
+.selector-categorias{
+    width: 300px; /*ancho fijo*/
+    margin: 20px auto; /*centra horizontalmente con margen vertical*/
+    font-family: Arial, Helvetica, sans-serif; /* fuente sans-serif*/
+    text-align: center; /*centra el texto*/
+}
+
+/*titulo del selector*/
+.selector-categorias__title{
+    font-size: 18px; /*tamaño de fuente*/
+    margin-bottom: 15px; /*espaciado debajo del titulo*/
+    color: #333; /*color gris oscuro*/
+}
+
+/*lista de categorias*/
+.selector-categorias__lista{
+    list-style: none; /*elimina viletas*/
+    padding: 0; /* limpia espacios*/
+    margin: 0; /* limpia espacios*/
+    font-size: 0; /*elimina espacio entre botones*/
+}
+
+/*items como botones*/
+.selector-categorias__item{
+    display: inline-block; /*permite qeu los items esten en linea horizontal*/
+    margin: 5px; /*separa los botones visualmente*/
+}
+
+/*boton de categoria*/
+/*estilo visual con colores azulados,
+padding para tamaño comodo,
+borde redondeado, cursor pointer para indicar que es clickeable*/
+.selector-categorias__boton{
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    background-color: #f0f8ff;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/*efecto hover para los botones*/
+.selector-categorias__boton:hover{
+    background-color: #007bff; /*cambia el fondo azul*/
+    color: #fff; /*texto blanco al pasar el mouse*/
+}

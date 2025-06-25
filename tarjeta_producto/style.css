@@ -1,0 +1,77 @@
+/* bloque principal: estilo general de la tarjeta producto */
+.producto-card {
+    width: 280px; /*ancho fjo de la tarjeta*/
+    border: 1px solid #ccc; /*borde gris claro*/
+    padding: 10px; /*espacio interno alrededor del contenido*/
+    margin: 20px auto; /*margen vertical y centrado horizontal*/
+    background-color: #fdfdfd; /*fondo blanco ligeramente gris*/
+}
+
+/* contenedor de imágenes: elimina espacios entre imagenes inline-block*/
+.producto-card__imagenes {
+    font-size: 0; /* elimina espacio blanco entre inline-block */
+    text-align: center; /*centra las imagenes horizontalmente*/
+    margin-bottom: 10px; /*espacio debajo del contenedor*/
+}
+
+/* cada imagen: se muestra en linea y con un tamaño fijo*/
+.producto-card__imagen {
+    width: 120px; /*ancho fijo para cada imagen*/
+    height: 120px; /*alto fijo para mantener proporcion*/
+    display: inline-block; /*permite qeu las imagenes esten una al lado de la otra*/
+    margin: 5px; /*espacio entre imagenes*/
+    border: 1px solid #ddd; /*borde claro alrededor de cada imagen*/
+    vertical-align: top; /*aliinea las imagenes con la parte superior*/
+    object-fit: cover; /*recorta la imagen para llenar el contenedor sin deformar*/
+    cursor: pointer; /*cambia el cursos al pasar sobre la imagen*/
+    transition: transform 0.3s ease; /*animacion suave para transformacion*/
+}
+
+/*efecto hover agranda ligeramente la imagen al pasar el cursor*/
+.producto-card__imagen:hover {
+    transform: scale(1.05); /*escala la imagen al 105%*/
+}
+
+/* texto principal titulo del producto*/
+.producto-card__title {
+    font-size: 18px; /*tamaño de fuente mediano*/
+    margin: 10px 0 5px; /*margen arriba y abajo para separar del resto*/
+    color: #333; /*color gris oscuro para buena legibilidad*/
+    text-align: center; /*centra el texto*/
+}
+
+/* descripción texto explicativo del producto*/
+.producto-card__descripcion {
+    font-size: 14px; /*tamaño de fuente pequeño*/
+    color: #666; /*color gris medio*/
+    margin: 0 0 10px; /*margen ingerior para separar del precio*/
+    text-align: center; /*centra el texto*/
+}
+
+/* precio destacado en rojo y en negrita*/
+.producto-card__price {
+    display: block; /*ocupa toda la linea*/
+    font-weight: bold; /*texto en negrita*/
+    color: #e60000; /*color rojo para llamar la atencion*/
+    text-align: center; /*centra el texto*/
+    margin-bottom: 10px; /*espacio debajo del precio*/
+}
+
+/* botón estilo y tamaño para facilitar clic*/
+.producto-card__boton {
+    display: block; /*ocupa toda la linea*/
+    width: 100%; /*ancho completo de la tarjeta*/
+    padding: 8px; /*espacio interno para hacer el boton mas grande*/
+    background-color: #007bff; /*color azul de fondo*/
+    color: #fff; /*texto blanco*/
+    border: none; /*sin borde*/
+    cursor: pointer; /*cursor pointer para indicar clickeable*/
+    font-size: 16px; /*tamaño de fuente legible */
+    border-radius: 4px; /*bordes redondeados*/
+    transition: background-color 0.3s ease; /*transicion suave para cambio de color*/
+}
+
+/*efecto hover cambia el color de fondo del producto al pasar el cursor*/
+.producto-card__boton:hover {
+    background-color: #0056b3; /*azul mas oscuro*/
+}

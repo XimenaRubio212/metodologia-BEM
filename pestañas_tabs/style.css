@@ -1,0 +1,63 @@
+.pestanas {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Oculta los radios */
+.pestanas__radio {
+  display: none;
+}
+
+/* Estilo de las etiquetas */
+.pestanas__etiqueta {
+  display: inline-block;
+  width: 33.3%;
+  padding: 10px 0;
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover */
+.pestanas__etiqueta:hover {
+  background-color: #bbb;
+}
+
+/* Ocultar contenido por defecto */
+.pestanas__contenido {
+  display: none;
+  padding: 15px;
+  background-color: white;
+  font-size: 15px;
+  border-top: 1px solid #ddd;
+}
+
+/* Mostrar contenido según pestaña activa */
+#pestana1:checked ~ .pestanas__etiqueta[for="pestana1"] {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+#pestana2:checked ~ .pestanas__etiqueta[for="pestana2"] {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+#pestana3:checked ~ .pestanas__etiqueta[for="pestana3"] {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+/* Mostrar el contenido correspondiente */
+#pestana1:checked ~ #contenido1,
+#pestana2:checked ~ #contenido2,
+#pestana3:checked ~ #contenido3 {
+  display: block;
+}

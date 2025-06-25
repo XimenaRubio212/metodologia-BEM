@@ -1,0 +1,70 @@
+/*bloque principal contenedor de la publicacion*/
+.publicacion_blog{
+    width: 90%; /*ocupa el 90% del ancho del contendor padre*/
+    max-width: 600px; /*ancho maximo para pantallas grandes*/
+    margin: 30px auto; /*centrado horizonntal con margen vertical*/
+    border: 1px solid #ddd; /*borde gris claro*/
+    background-color: #fffefa; /*fondo blanco con tono muy claro*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*fuenye sans-serif*/
+}
+
+/*titulo*/
+/*tamaño grande para destacar,
+margen inferior para separar del contenido siguinete,
+color gris oscuro para buenja legibilidad*/
+.publicacion_blog_title{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/*informacion del autor y fecha*/
+/*tamaño pequeño y color gris medio,
+margen inferior parar separar del contenido*/
+.publicacion_blog__meta{
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/*estilo nombre del autor*/
+/*negrita y color azul paraq destacar */
+.publicacion_blog_autor{
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/*estilo de la fecha*/ 
+/*cursiva para diferencia visualmente*/
+.publicacion_blog_fecha{
+    font-style: italic;
+}
+
+/*imagen destacada*/
+/*ancho completo del contenedor,
+altura automatica par amantener proporcion,
+borde fris claro y margen inferior para separar*/
+.publicacion_blog__image{
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+/*contenido*/
+/*tamaño de feunte legible,
+interlineado comodo,
+color gris suave*/
+.publicacion_blog__contenido{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/*parrafo dentro del contenido*/
+/*margen inferior para separar parrafos,
+texto justificado para mejor presentacion*/
+.publicacion_blog_parrafo{
+    margin-bottom: 15px;
+    text-align: justify;
+}

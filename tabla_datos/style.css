@@ -1,0 +1,42 @@
+/*bloque principal contenedor de la tabla */
+.tabla-datos{
+    width: 90%; /*ocupa el 90% del ancho del contenedor padre*/
+    max-width: 600px; /*ancho maximo para pantallas grandes*/
+    margin: 20px auto; /*centra horizontalmente con margen vertical*/
+    font-family: 'Times New Roman', Times, serif; /*fuente elegante*/
+}
+
+/*titulo de la tabla*/
+.tabla-datos__title{
+    text-align: center; /*centra el texto*/
+    margin-bottom: 10px; /*espaciado debajo del titulo*/
+    font-size: 20px; /*tamaño de fuente grande*/
+    color: #222; /*color gris oscuro*/
+}
+
+/*tabla general*/
+.tabla-datos__table{
+    width: 100%; /*ocupa todo el ancho del contenedor*/
+    border-collapse: collapse; /*elimina espacio entre bordes de celdas*/
+    border: 1px solid #ccc; /*borde general de la tabla*/
+}
+
+/*encabezados de columna*/
+.tabla-datos__header{
+    background-color: #f2f2f2; /*fondo gris claro*/
+    padding: 8px; /*espaciado interno*/
+    border: 1px solid #ccc; /*borde gris*/
+    font-weight: bold; /*texto en negrita*/
+    text-align: left; /*alineacion a la izquierda*/
+}
+
+/*filas pares para alternar color de fondo*/
+.tabla-datos__row:nth-child(even){
+    background-color: #f9f9f9; /*aplicando fondo gris muy claro a las filas pares para mejorar legibilidad*/
+}
+
+/*celdas de datos*/
+.tabla-datos__cell{
+    padding: 8px; /*espaciado inteno*/
+    border: 1px solid #ccc; /*borde gris*/
+}

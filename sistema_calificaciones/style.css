@@ -1,0 +1,40 @@
+/*bloque principal contenedor de la valoracion*/
+.valoracion{
+    width: 250px; /*ancho fijo*/
+    margin: 20px; /*margen alrededor*/
+    text-align: center; /*centra el contenido*/
+    font-family: 'Times New Roman', Times, serif; /*fuente seirf elegante*/
+}
+
+/*titulo de la valoracion*/
+.valoracion__title{
+    font-size: 18px; /*tamaño de fuente*/
+    margin-bottom: 10px; /*espaciado deabjo*/
+    color: #333; /*color gris oscuro*/
+}
+
+/*contenedor de estrellas*/
+.valoracion__iniciar{
+    font-size: 0; /*elimina espacio entre estrellas*/
+    margin-bottom: 8px; /*para separar las estrellas del texto*/ 
+}
+
+/*estrellas*/
+.valoracion__iniciar{
+    display: inline-block; /*para que esten en linea*/
+    font-size: 24px; /*para tamaño visible*/
+    color: #ccc; /*color gris claro para estellas vacias*/
+    margin: 0 2px; /*margen horizontal para separacion*/
+    cursor: pointer; /*cursor pointer para indicar que se pueden interactuar*/
+}
+
+/*estrellas llenas*/
+.valoracion__iniciar--lleno{
+    color: #ffc107; /*color amarillo dorado para indicar estrellas selecionadas o llenas*/
+}
+
+/*texto debajo*/
+.valoracion__texto{
+    font-size: 14px; /*tamaño legible*/
+    color: #666; /*gris medio*/
+}

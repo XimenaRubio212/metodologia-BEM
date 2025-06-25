@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Pestañas (Tabs)</title>
+</head>
+<body>
+  <div class="contenido__ejercicio" id="ACTIVIDAD">
+    <h2 class="contenido__titulo">Pestañas (Tabs)</h2>
+
+    <div class="pestanas">
+      <input type="radio" name="pestana" id="pestana1" class="pestanas__radio" checked>
+      <label for="pestana1" class="pestanas__etiqueta">Descripción</label>
+
+      <input type="radio" name="pestana" id="pestana2" class="pestanas__radio">
+      <label for="pestana2" class="pestanas__etiqueta">Comentarios</label>
+
+      <input type="radio" name="pestana" id="pestana3" class="pestanas__radio">
+      <label for="pestana3" class="pestanas__etiqueta">Detalles</label>
+
+      <div class="pestanas__contenido" id="contenido1">
+        <p class="pestanas__texto">Este producto es ideal para los fanáticos del código limpio y CSS organizado.</p>
+      </div>
+
+      <div class="pestanas__contenido" id="contenido2">
+        <p class="pestanas__texto">"Me encantó la estructura con BEM", "Excelente uso de variables CSS".</p>
+      </div>
+
+      <div class="pestanas__contenido" id="contenido3">
+        <p class="pestanas__texto">Disponible en varios colores. Compatible con HTML5 y CSS3.</p>
+      </div>
+    </div>
+
+    <a href="#Volver" class="contenido__volver">Volver</a>
+  </div>
+</body>
+</html>

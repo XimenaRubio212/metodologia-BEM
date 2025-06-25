@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--link que vincula al archivo de estilo CSS externo-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Tarjeta Producto</title>
+</head>
+<body>
+    <!--cada tarjeta de producto tiene una clase para apliar estilos especifico
+    y reutilizables con CSS-->
+    <div class="producto-card">
+        <!--las clases permiten seleccionar y dar estilos
+        a imagenes de productos-->
+        <div class="producto-card__imagenes">
+            <!--imagen principal del producto-->
+            <img src="img/image.png" alt="Nombre del Producto" class="producto-card__imagen" />
+        </div>
+        <!--las clases en titulos, descripciones y precios
+        facilitan el diseño y la personalizacion-->
+        <h2 class="producto-card__title">Girasoles</h2>
+        <!--descripcion breve del producto-->
+        <p class="producto-card__descripcion">Girasoles con dos calidades de resolución diferentes.</p>
+        <!--precio del producto-->
+        <span class="producto-card__price">$10.000</span>
+        <button class="producto-card__boton">Agregar al carrito</button>
+    </div>
+
+    <!--se pueden agregar variantes mediante clases adicionales para cambiar
+    el diseño solo de algunos elementos-->
+    <div class="producto-card producto-card--variant2">
+        <div class="producto-card__imagenes">
+            <img src="img/image2.png" alt="Nombre del Producto" class="producto-card__imagen" />
+        </div>
+        <h2 class="producto-card__title">Girasoles</h2>
+        <p class="producto-card__descripcion">Girasoles con dos calidades de resolución diferentes.</p>
+        <span class="producto-card__price">$12.000</span>
+        <button class="producto-card__boton">Agregar al carrito</button>
+    </div>
+</body>
+</html>
